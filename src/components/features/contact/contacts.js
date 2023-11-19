@@ -8,7 +8,14 @@ const Contacts = () => {
   const { contacts } = contactcontext;
 
   return contacts.map((data) => {
-    return <ContactItem key={data.id} name={data.name} email={data.email} />;
+    return (
+      <ContactItem
+        key={data.id}
+        id={data.id}
+        name={data.name}
+        email={data.email}
+      />
+    );
   });
 };
 
